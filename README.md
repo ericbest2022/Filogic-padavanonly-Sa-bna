@@ -1,4 +1,4 @@
-# Cudy-TR3000-ImmortalWrt24.10-padavanonly
+# Cudy-TR3000-V1-112M-ImmortalWrt24.10-padavanonly
 
 # 测试OK
 - WiFi稳定，测试速度比 ImmortalWrt25.12 快一些
