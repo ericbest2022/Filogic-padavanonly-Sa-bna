@@ -4,9 +4,7 @@
 - WiFi稳定
 - WPA3加密OK
 
-# 20260320
-- 添加了passwall
-- config 是 Immortalwrt24.10-padavanonly-Cudy-TR3000
+
 
 
 # Version
