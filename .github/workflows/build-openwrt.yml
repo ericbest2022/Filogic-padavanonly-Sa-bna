@@ -10,9 +10,13 @@
 
 name: Build OpenWrt
 
+permissions:
+  contents: write
+
 env:
+#  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+#  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
   REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-6.6
-  #REPO_URL: https://github.com/sagehou/immortalwrt-mt798x-6.6
   REPO_BRANCH: openwrt-24.10-6.6
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: CudyTR3000.config
