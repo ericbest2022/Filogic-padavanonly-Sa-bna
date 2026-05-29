@@ -1,8 +1,9 @@
-# Cudy-TR3000-V1-112M-ImmortalWrt24.10-padavanonly
+# Filogic-ImmortalWrt24.10-padavanonly
 
-# 测试OK
-- WiFi稳定
-- WPA3加密OK
+# model 
+- Cudy TR3000
+- 360T7
+- xiaomi AX3000T
 
 
 
