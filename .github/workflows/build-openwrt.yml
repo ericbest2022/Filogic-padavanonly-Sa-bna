@@ -13,6 +13,18 @@ name: Build OpenWrt
 permissions: write-all
 #开启写权限，防止无法上传到release
 
+on:
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+  schedule:
+    - cron: 0 8 * * 2
+    # 每周二，八点运行一次
+
 env:
 #  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 #  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
@@ -29,16 +41,6 @@ env:
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
-on:
-  repository_dispatch:
-  workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
-#  schedule:
-#    - cron: 0 8 */5 * *
 
 jobs:
   build:
